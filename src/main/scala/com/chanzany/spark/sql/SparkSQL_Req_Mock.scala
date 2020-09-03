@@ -5,7 +5,7 @@ import org.apache.spark.sql.SparkSession
 
 object SparkSQL_Req_Mock {
   def main(args: Array[String]): Unit = {
-    System.setProperty("HADOOP_USER_NAME","chanzany")
+    System.setProperty("HADOOP_USER_NAME","atguigu")
     val conf = new SparkConf().setMaster("local[*]").setAppName("SparkSQL_Req_Mock")
     val spark = SparkSession.builder().enableHiveSupport().config(conf).getOrCreate()
     import spark.implicits._
